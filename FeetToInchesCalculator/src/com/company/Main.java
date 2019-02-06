@@ -2,23 +2,31 @@ package com.company;
 
 public class Main {
 
-    public static double calcFeetAndInchesToCentimeters(int feet, int inches) {
-	    if(feet >= 0) {
-	        return -1;
-        } else if((inches >= 0) || (inches <= 12)) {
-            return -1;
-        } else if {
-	        int inchTotal = feet / 12;
-	        double total = (inches + inchTotal) * 2.54;
-            System.out.println(total + "cm");
-        }
+    public static void main(String[] args) {
+        calcFeetAndInchesToCentimeters(6, 10)
     }
 
-    public static double calcFeetAndInchesToCentimeters(int inches) {
-        if(inches >= 0) {
-            return -1;
-        } else if {
-            System.out.println();
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
+	    if((feet < 0) || ((inches >= 0) && (inches <= 12))) {
+            System.out.println("Invalid feet or inches parameters.");
+	        return -1;
         }
+
+        double centimeters = (feet * 12) * 2.54;
+	    centimeters =+ inches * 2.54;
+        System.out.println(feet + " feet, " + inches + " inches = " + centimeters + " cm");
+        return centimeters
     }
+
+    public static calcFeetAndInchesToCentimeters(double inches) {
+        if(inches < 0) {
+            return -1;
+        }
+
+        double feet = (int) inches / 12;
+        double remainingInches = (int) inches % 12;
+        System.out.println(inches + " inches is equal to " + feet + " feet and " + remainingInches +  " inches");
+        return calcFeetAndInchesToCentimeters(feet, inches);
+    }
+
 }
