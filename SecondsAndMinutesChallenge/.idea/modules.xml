@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FeetToInchesCalculator.iml" filepath="$PROJECT_DIR$/.idea/FeetToInchesCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecondsAndMinutesChallenge.iml" filepath="$PROJECT_DIR$/SecondsAndMinutesChallenge.iml" />
     </modules>
   </component>
 </project>
